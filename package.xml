@@ -1,0 +1,36 @@
+<?xml version="1.0"?>
+<package>
+  <name>changepoint</name>
+  <version>0.0.0</version>
+  <description>changepoint</description>
+  <author>Scott Niekum</author>
+  <license>BSD</license>
+  <url>http://ros.org/wiki/changepoint</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>roscpp</build_depend>
+  <build_depend>rospy</build_depend>
+  <build_depend>std_msgs</build_depend>
+  <build_depend>eigen</build_depend>
+  <build_depend>articulation_msgs</build_depend>
+  <build_depend>articulation_models</build_depend>
+
+
+  <run_depend>roscpp</run_depend>
+  <run_depend>rospy</run_depend>
+  <run_depend>std_msgs</run_depend>
+  <run_depend>eigen</run_depend>
+  <run_depend>articulation_msgs</run_depend>
+  <run_depend>articulation_models</run_depend>
+
+  <!-- <depend package="pluginlib"/> -->
+  <!-- <rosdep name="eigen" /> -->
+  
+  <export>
+    <changepoint plugin="${prefix}/default_cp_plugin.xml" />
+  </export>
+
+  
+</package>
+
+
